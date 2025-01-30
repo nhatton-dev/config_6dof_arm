@@ -25,12 +25,12 @@ def generate_launch_description():
     )
 
     # Robot state publisher
-    robot_state_publisher = Node(
-        package="robot_state_publisher",
-        executable="robot_state_publisher",
-        output="both",
-        parameters=[moveit_config.robot_description],
-    )
+    # robot_state_publisher = Node(
+    #     package="robot_state_publisher",
+    #     executable="robot_state_publisher",
+    #     output="both",
+    #     parameters=[moveit_config.robot_description],
+    # )
 
     # ros2_control using mock hardware for trajectory execution
     ros2_controllers_path = os.path.join(
@@ -48,8 +48,26 @@ def generate_launch_description():
         output="both",
     )
 
+    # # Spawner for arm_controller
+    # arm_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["arm_controller"],
+    #     output="both",
+    # )
+
+    # # Spawner for gripper_controller
+    # gripper_controller_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner",
+    #     arguments=["gripper_controller"],
+    #     output="both",
+    # )
+
     return LaunchDescription([
         static_tf,
-        robot_state_publisher,
+        # robot_state_publisher,
         ros2_control_node,
+        # arm_controller_spawner,
+        # gripper_controller_spawner,
     ] + generate_demo_launch(moveit_config).entities)
