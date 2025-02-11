@@ -23,10 +23,10 @@ For integration with actual hardware and more detailed information, please refer
 
 To run the MoveIt! demo:
 ```bash
-ros2 launch moveit_6dof_arm demo.launch.py
+ros2 launch arm_moveit_config demo.launch.py
 ```
 
 To display the robot model in RViz:
 ```bash
-ros2 launch urdf_6dof_arm display.launch.py
+ros2 launch arm_description display.launch.py
 ```
