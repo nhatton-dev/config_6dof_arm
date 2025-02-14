@@ -5,12 +5,7 @@ project(arm_description)
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY launch meshes urdf
-  DESTINATION share/${PROJECT_NAME}
-)
-
-# Install rviz configuration files
-install(DIRECTORY rviz
+  DIRECTORY launch meshes urdf rviz mr
   DESTINATION share/${PROJECT_NAME}
 )
 
