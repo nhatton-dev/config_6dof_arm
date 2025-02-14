@@ -17,6 +17,7 @@
         <joint name="Joint_4"/>
         <joint name="Joint_5"/>
         <joint name="Joint_6"/>
+        <joint name="EE_Gripper_Joint"/>
     </group>
     <group name="gripper">
         <link name="Gripper"/>

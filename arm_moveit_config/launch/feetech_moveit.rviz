@@ -1,13 +1,13 @@
 Panels:
   - Class: rviz_common/Displays
-    Help Height: 79
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
         - /Global Options1
         - /MotionPlanning1
       Splitter Ratio: 0.5
-    Tree Height: 285
+    Tree Height: 364
   - Class: rviz_common/Help
     Name: Help
   - Class: rviz_common/Views
@@ -19,7 +19,7 @@ Visualization Manager:
   Class: ""
   Displays:
     - Alpha: 0.5
-      Cell Size: 1
+      Cell Size: 0.10000000149011612
       Class: rviz_default_plugins/Grid
       Color: 160; 160; 164
       Enabled: true
@@ -33,7 +33,7 @@ Visualization Manager:
         Y: 0
         Z: 0
       Plane: XY
-      Plane Cell Count: 10
+      Plane Cell Count: 50
       Reference Frame: <Fixed Frame>
       Value: true
     - Acceleration_Scaling_Factor: 0.5
@@ -63,7 +63,7 @@ Visualization Manager:
         Interrupt Display: false
         Links:
           All Links Enabled: true
-          base_link:
+          EE_Gripper_Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -111,6 +111,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Loop Animation: true
         Robot Alpha: 0.30000001192092896
         Robot Color: 150; 50; 150
@@ -153,7 +157,7 @@ Visualization Manager:
         Attached Body Color: 150; 50; 150
         Links:
           All Links Enabled: true
-          base_link:
+          EE_Gripper_Link:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -201,15 +205,19 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
-      Velocity_Scaling_Factor: 0.30000000000000004
+      Velocity_Scaling_Factor: 0.3
   Enabled: true
   Global Options:
     Background Color: 222; 221; 218
-    Fixed Frame: base_link
+    Fixed Frame: world
     Frame Rate: 30
   Name: root
   Tools:
@@ -231,9 +239,9 @@ Visualization Manager:
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.1599999964237213
-        Y: 0
-        Z: 0.18000000715255737
+        X: 0.1600910723209381
+        Y: -0.0001617447123862803
+        Z: 0.17947526276111603
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
@@ -280,5 +288,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1866
-  X: 1974
+  X: 54
   Y: 31
